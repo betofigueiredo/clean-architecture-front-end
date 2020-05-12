@@ -1,12 +1,8 @@
 // reducers
-import auth from '../../modules/Auth/store/reducers';
-import employees from '../../modules/Employees/store/reducers';
-import teams from '../../modules/Teams/store/reducers';
+import items from '../../domains/Items/store/reducers';
 
 const combined_reducers = {
-	auth,
-	employees,
-	teams,
+	items,
 };
 
 export default combined_reducers;
