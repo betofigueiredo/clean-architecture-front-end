@@ -2,10 +2,10 @@ import items from './store';
 import reducerUtil from '../../../utils/redux/reducerUtil';
 
 // Use cases
-import addItem from '../use_cases/addItem';
+import itemAdded from '../use_cases/itemAdded';
 
 const funcs = {
-	'[items] ADD_ITEM': addItem,
+	'[items] ITEM_ADDED': itemAdded,
 };
 
 const reducer = reducerUtil(items, funcs);
