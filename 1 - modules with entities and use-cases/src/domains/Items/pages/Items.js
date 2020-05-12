@@ -1,8 +1,8 @@
 import React from 'react';
 
 // Components
-import ItemsList from '../../components/ItemsList';
-import ItemEdition from '../../components/ItemEdition';
+import ItemsList from '../components/ItemsList';
+import ItemEdition from '../components/ItemEdition';
 
 const Items = () => (
 	<>
