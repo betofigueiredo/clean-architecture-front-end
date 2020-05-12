@@ -1,9 +1,9 @@
-import { all, fork } from 'redux-saga/effects';
+import { all } from 'redux-saga/effects';
 
-import itemsSaga from '../../domains/Items/store/sagas';
+// import itemsSaga from '../../domains/Items/store/sagas';
 
 export default function* rootSaga() {
 	yield all([
-		fork(itemsSaga),
+		// fork(itemsSaga),
 	]);
 }
