@@ -1,6 +1,8 @@
 import Item from '../../entities';
 
-const addItem = ({ item_to_add }) => {
+const addItem = (state = {}, action = {}) => {
+	const item_to_add = action.item_to_add || {};
+
 	function addItemToState(item) {
 		return {
 			...state,
