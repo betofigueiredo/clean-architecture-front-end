@@ -12,6 +12,7 @@ const itemAdded = (state = {}, action = {}) => {
 
 	function checkErrors(item) {
 		if (item.hasErrors()) {
+			// TODO errors
 			throw new Error('Item has errors');
 		}
 		return addItemToState(item);
