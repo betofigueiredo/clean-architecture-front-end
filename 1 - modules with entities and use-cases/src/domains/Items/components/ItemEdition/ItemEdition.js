@@ -1,10 +1,18 @@
 import React from 'react';
+import { useSelector, shallowEqual } from 'react-redux';
+
+// Components
+import ItemEditionQuantity from '../ItemEditionQuantity';
 
 const ItemEdition = () => {
-	const aaa = '';
+	const item_name = useSelector(store => store
+		.items?.item_on_edition?.name, shallowEqual) || '';
 
 	return (
-		<>{aaa}</>
+		<>
+			<p>{item_name}</p>
+			<ItemEditionQuantity />
+		</>
 	);
 };
 
